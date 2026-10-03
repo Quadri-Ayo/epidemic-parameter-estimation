@@ -27,22 +27,16 @@ The project investigates this question using computational parameter-estimation 
 ---
 
 ## Mathematical Framework
+Consider an epidemiological model represented by a system of ordinary differential equations:
 
-Consider an epidemiological model represented by
+$$\frac{d\mathbf{x}}{dt} = f(t, \mathbf{x}, \theta)$$
 
-$$
-\frac{d\mathbf{x}}{dt}
-=
-f(t,\mathbf{x},\theta),
-$$
+where:
+*   $\mathbf{x}(t)$ is the state vector.
+*   $f$ represents the model dynamics.
+*   $\theta$ represents unknown parameters.
 
-where
-
-* \(\mathbf{x}(t)\) is the state vector,
-* \(f\) represents the model dynamics,
-* \(\theta\) represents unknown parameters.
-
-Given observations
+Given discrete observations
 
 $$
 y_1,y_2,\ldots,y_n,
